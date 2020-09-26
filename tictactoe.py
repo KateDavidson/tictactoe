@@ -102,13 +102,13 @@ def tictactoe_game():
             move = get_move(possible_moves)
             possible_moves.remove(move)
             used_moves_x.append(move)
-                
-                
-   
+
+    def playAgain():
+        again = str(input("Would like to play again (type yes or no): "))
+        if again == "yes":
+       
+      return tictactoe_game()
+
+        
 tictactoe_game()
-    
-
-
-
-
 
